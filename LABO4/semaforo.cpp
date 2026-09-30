@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    char color;
+
+    cout << "Ingrese un color del semaforo (R, A, V): " << endl;
+    cin >> color;
+
+    switch (color) {
+        case 'R':
+        case 'r':
+            cout << "Alto" << endl;
+            break;
+        case 'A':
+        case 'a':
+            cout << "Precaucion" << endl;
+            break;
+        case 'V':
+        case 'v':
+            cout << "Avance" << endl;
+            break;
+        default:
+            cout << "color no valido" << endl;
+            break;
+    }
+
+    return 0;
+}
